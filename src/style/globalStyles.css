@@ -1,0 +1,35 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;700&family=Roboto&display=swap');
+
+:root{
+    --color-brand-1: #0000FF;
+    --color-brand-2: #3532FF;
+    --color-success: #36B37E;
+    --color-error: #FF5630;
+    --color-warning: #FFAB00;
+    --color-gray-1: #212529;
+    --color-gray-2: #495057;
+    --color-gray-3: #ADB5BD;
+    --color-gray-4: #E9ECEF;
+    --color-gray-5: #F1F3F5;
+    --color-gray-6: #FFFFFF;
+
+    --font-size-1: 40px;
+    --font-size-2: 32px;
+    --font-size-3: 20px;
+    --font-size-4: 18px;
+    --font-size-5: 16px;
+
+    --font-inter: 'Inter', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width:10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-brand-1);
+}

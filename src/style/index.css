@@ -1,0 +1,153 @@
+@import url(globalStyles.css);
+@import url(toast.css);
+
+body{
+    height: 100vh;
+}
+
+main{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 92px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25%;
+    border-bottom: 1px solid var(--color-gray-3);
+}
+
+.header__container--left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#eclipse{
+    height: 15px;
+    padding-bottom: 3px;
+}
+
+.header__container--right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__container--right button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 50px;
+    background-color: var(--color-gray-6);
+    color: var(--color-brand-1);
+    font-size: var(--font-size-4);
+    font-family: var(--font-roboto);
+    font-weight: 600;
+    border: 1px solid var(--color-brand-1);
+}
+
+
+
+.header__container--right button:hover{
+    cursor: pointer;
+}
+
+#button__right{
+    background-color: var(--color-brand-1);
+    color: var(--color-gray-6);
+}
+
+.main__container{
+    height: 90%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.select__container{
+    width: 550px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.img__container{
+    width: 550px;
+    height: 750px;
+    overflow: hidden
+}
+
+.selected__item{
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-3);
+    width: 100%;
+    height: 53px;
+    color: var(--color-gray-6);
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../icons/index/SelectSet.svg) 95% / 3% no-repeat var(--color-brand-1);;
+    padding-left: 25px;
+}
+
+.listas__container{
+    width: 100%;
+    height: 750px;
+    box-shadow: 0px 0px 34px -5px var(--color-gray-3);
+    overflow-x: auto;
+}
+
+.listas__container h1{
+    font-weight: 700;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-2);
+    padding: 30px;
+}
+
+.ul__container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: start;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.li__container--companies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border: 1px solid var(--color-brand-1);
+    height: 100px;
+    width: 92%;
+    padding: 0 15px;
+    font-family: var(--font-inter);
+    gap: 18px;
+}
+.li__container--companies h2{
+    font-size: var(--font-size-3);
+    font-weight: 700;
+}
+.li__container--companies p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 110px;
+    font-size: 16px;
+    border: 1px solid var(--color-brand-1);
+    color: var(--color-brand-1);
+    border-radius: 20px;
+}

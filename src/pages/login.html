@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="module" src="../scripts/login.js"></script>
+    <link rel="stylesheet" href="../style/login.css">
+    <title>Kenzie Empresas - Login</title>
+</head>
+<body>
+    <header>
+        <div class="header__container--left">
+            <img id="eclipse" src="../icons/index/Ellipse 1.svg" alt="Eclipse azul">
+            <img src="../icons/index/Kenzie Empresas.svg" alt="Kenzie Empresas">
+        </div>
+        <div class="header__container--right">
+            <button id="button__right">Home</button>
+            <button class="button__register">Cadastro</button>
+        </div>
+    </header>
+    <main>
+        <div class="main__container">
+            <div class="main__container--header">
+                <h1>Login</h1>
+                <p>Preencha os campos para realizar login</p>
+            </div>
+            <div class="main__container--input">
+                <input type="email" name="email" id="inputEmail" class="input__login input__login--email" placeholder="Seu e-mail">
+                <input type="password" name="password" id="inputPassword" class="input__login" placeholder="Sua senha">
+                <button type="submit" class="button__login">Login</button>
+            </div>
+            <div class="main__container--float">
+                <p>ou</p>
+                <button class="button__register">Cadastre-se</button>
+            </div>
+        </div>
+        <div class="toast__container hidden">
+            <p class="toast__paragraph">Login realizado com sucesso</p>
+        </div>
+    
+    </main>
+    <script type="module" src="../scripts/toast.js"></script>
+</body>
+</html>

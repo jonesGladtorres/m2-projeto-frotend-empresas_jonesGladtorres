@@ -1,0 +1,492 @@
+/* MODAL EDIT DEPARTAMENT */
+
+.modal__controller--editDepartament{
+    border: 1px solid transparent;
+}
+
+.modal__container--editDepartament{
+    height: 450px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.modal__container--editDepartament h1{
+    font-size: var(--font-size-2);
+}
+
+.modal__container--editDepartament h3{
+
+}
+
+.modal__container--editDepartament p{
+
+}
+
+.modal__input--creatDepartament{
+
+}
+
+.modal__input--creatDepartament select{
+
+}
+
+.modal__input--creatDepartament button{
+
+}
+
+.divUl_containe{
+
+}
+
+.ul__container--modal{
+
+}
+
+.li__container--modal h3{
+
+}
+
+.li__container--modal p{
+
+}
+
+.li__container--modal button{
+
+}
+/* ---------------------------------------------------- */
+
+
+/* MODAL CREATE DEPARTAMENT */
+
+
+.modal__controller--createDepartament{
+    border: none;
+    
+}
+
+.modal__controller{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 490px;
+    height: 380px;
+    position: relative;
+}
+
+.modal__controller h1{
+    font-size: var(--font-size-1);
+    font-family: var(--font-poppins);
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.modal__controller input{
+    width: 392px;
+    height: 46px;
+    font-size: var(--font-size-4);
+    color: var(--color-gray-2);
+    outline: none;
+}
+
+.modal__controller select{
+    width: 400px;
+    height: 50px;
+    font-size: var(--font-size-4);
+    color: #495057c6;
+}
+
+.modal__controller button{
+    width: 400px;
+    height: 50px;
+    background-color: var(--color-success);
+    border: none;
+    color: var(--color-gray-6);
+    font-size: var(--font-size-4);
+    font-family: var(--font-inter);
+}
+
+.modal__controller button:hover{
+    cursor: pointer;
+}
+
+.closeModal{
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-2);
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.closeModal:hover{
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------- */
+
+/* MODAL EDIT DEPARTAMENT */
+
+.modal__container--editDepartment{
+    width: 450px;
+    height: 330px;
+    border: 1px solid transparent;
+    padding-top: 50px;
+    position: relative;
+}
+
+.modal__controller--editDepartment{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.titulo__editDepartment{
+    font-size: var(--font-size-2);
+    font-family: var(--font-poppins);
+    font-weight: 700;
+}
+
+.input__editDepartment{
+    outline: none;
+    width: 79%;
+    resize: none;
+    font-size: var(--font-size-4);
+    padding: 15px;
+}
+
+.button__editDepartment{
+    height: 70px;
+    width: 86%;
+    background-color: var(--color-success);
+    color: var(--color-gray-6);
+    font-size: var(--font-size-4);
+    border: 1px solid transparent;
+}   
+
+.button__editDepartment:hover{
+    cursor: pointer;
+}
+
+.button__close--editDepartment{
+    font-size: var(--font-size-2);
+    font-family: var(--font-inter);
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.button__close--editDepartment:hover{
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------- */
+
+/* MODAL CONFIRM DELETE DEPARTAMENT */
+
+.modal__container--confirmDelete{
+    height: 350px;
+    width: 600px;
+    border: none;
+}
+
+.modal__controller--confirmDelete{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+}
+
+.titulo__confirmDelete{
+    font-size: var(--font-size-2);
+    font-weight: 700;
+    font-family: var(--font-poppins);
+    text-align: center;
+}
+
+.button__confirmDelete{
+    width: 400px;
+    height: 50px;
+    background-color: var(--color-error);
+    font-size: var(--font-size-4);
+    color: var(--color-gray-6);
+    border: 1px solid transparent;
+}
+
+.button__confirmDelete:hover{
+    cursor: pointer;
+}
+
+.button__close--deleteDepartament{
+    font-size: var(--font-size-2);
+    font-family: var(--font-inter);
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.button__close--deleteDepartament:hover{
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------- */
+
+/* MODAL VIEW DEPARTAMENT */
+
+.modal__container--viewDepartment{
+    width: 850px;
+    height: 600px;
+    border: none;
+}
+
+.modal__controller--viewDepartment{
+    width: 90%;
+    height: 90%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    border: none;
+}
+
+.modal__h1--viewDepartment{
+    margin-top: 35px;
+    font-size: var(--font-size-2);
+    font-weight: 700;
+    font-family: var(--font-poppins);
+}
+
+.modal__h3--viewDepartment{
+    font-size: var(--font-size-3);
+    font-weight: 700;
+    font-family: var(--font-poppins);
+}
+.modal__p--viewDepartment{
+    font-size: var(--font-size-4);
+    font-family: var(--font-poppins);
+}
+
+.container__select--viewDepartment{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.modal__select--viewDepartment{
+    height: 50px;
+    width: 100%;
+    font-family: var(--font-inter);
+    padding: 0 15px;
+    font-size: var(--font-size-4);
+    color: var(--color-gray-2);
+    outline: none;
+}
+
+.modal__buttonContrat--viewDepartment{
+    height: 50px;
+    width: 30%;
+    background-color: var(--color-success);
+    border: none;
+    color: var(--color-gray-6);
+    font-size: var(--font-size-4);
+}
+
+.divUl__container--viewDepartment{
+    display: flex;
+    background-color: var(--color-gray-5);
+    height: 100%;
+    width: 96%;
+    align-items: center;
+    padding: 15px;
+    overflow: auto;
+}
+
+.ul__container--viewDepartment{
+    display: flex;
+    background-color: var(--color-gray-5);
+    flex-wrap: nowrap;
+    gap: 18px;
+    height: 100%;
+    align-items: center;
+}
+
+.li__container--viewDepartment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 200px;
+    height: 180px;
+    background-color: var(--color-gray-6);
+    font-family: var(--font-inter);
+}
+.li__container--viewDepartment h3{
+    font-size: var(--font-size-4);
+    font-weight: 700;
+}
+
+.li__container--viewDepartment button{
+    background-color: var(--color-gray-6);
+    border:1px solid var(--color-error);
+    color: var(--color-error);
+    width: 85%;
+    height: 40px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.li__container--viewDepartment button:hover{
+    cursor: pointer;
+}
+
+.modal__close--viewDepartment{
+    font-size: var(--font-size-2);
+    font-family: var(--font-inter);
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.modal__close--viewDepartment:hover{
+    cursor: pointer;
+}
+
+.modal__h2Empyt--viewDepartment{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: var(--font-size-3);
+    font-family: var(--font-poppins);
+}
+
+/* ---------------------------------------------------- */
+
+/* MODAL EDIT USERS */
+
+
+.modal__container--editUsers{
+    width: 550px;
+    height: 350px;
+    border: none;
+}
+
+.modal__controller--editUsers{
+    width: 89%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 30px 30px 0 30px;
+    position: relative;
+    gap: 25px;
+}
+
+.modal__buttonClose--editUsers{
+    font-size: var(--font-size-2);
+    font-family: var(--font-inter);
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.modal__controller--editUsers h1{
+    font-size: var(--font-size-1);
+    font-weight: 700;
+    font-family: var(--font-poppins);
+}
+
+.modal__inputs--editUsers{
+    height: 50px;
+    width: 95%;
+    padding-left: 15px;
+    font-size: var(--font-size-4);
+    font-family: var(--font-inter);
+    outline: none;
+}
+
+.modal__button--editUsers{
+    height: 53px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: var(--color-success);
+    color:  var(--color-gray-6);
+    font-size: var(--font-size-4);
+    font-family: var(--font-inter);
+    border: 1px solid transparent;
+}
+
+.modal__button--editUsers:hover{
+    cursor: pointer;
+}
+
+.modal__buttonClose--editUsers{
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------- */
+
+/* MODAL DELETE USERS */
+
+.modal__container--deleteUsers{
+    width: 650px;
+    height: 280px;
+    border: none;
+}
+
+.modal__controller--deleteUsers{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    position: relative;
+}
+
+.modal__controller--deleteUsers h1{
+    font-size: var(--font-size-2);
+    font-family: var(--font-poppins);
+    font-weight: 700;
+    padding-top: 70px;
+}
+
+.modal__buttonRemove--deleteUsers{
+    height: 50px;
+    width: 70%;
+    background-color: var(--color-error);
+    font-size: var(--font-size-4);
+    color: var(--color-gray-6);
+    border: none;
+}
+
+.modal__buttonRemove--deleteUsers:hover{
+    cursor: pointer;
+}
+
+.modal__buttonClose--deleteUsers{
+    font-size: var(--font-size-2);
+    font-family: var(--font-inter);
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.modal__buttonClose--deleteUsers{
+    cursor: pointer;
+}

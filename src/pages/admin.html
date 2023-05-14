@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="module" src="../scripts/admin.js"></script>
+    <link rel="stylesheet" href="../style/admin.css">
+    <title>Kenzie Empresas - User Page</title>
+</head>
+<body>
+    <header>
+        <div class="header__container--left">
+            <img id="eclipse" src="../icons/index/EllipseAdmin.svg" alt="Eclipse azul">
+            <img src="../icons/index/Kenzie Empresas.svg" alt="Kenzie Empresas">
+        </div>
+        <div class="header__container--right">
+            <button class="button__register">Logout</button>
+        </div>
+    </header>
+    <main>
+        <div class="main__container">
+            <section class="sectionUp">
+                <div class="sectionUp__header--container">
+                    <div class="sectionUp__h1--container">
+                        <h1>Departamentos</h1>
+                    </div>
+                    <div class="sectionUp__buttons--container">
+                        <select name="selectCompanies" class="selectCompanies">
+                            <option value="" hidden>Selecionar Empresas</option>
+                        </select>
+                        <button class="button__createModal">+ Criar</button>
+                    </div>
+                </div>
+                <div class="section__container">
+                    <ul class="ul__container--admin"></ul>
+                </div>
+            </section>
+            <section class="sectionDown">
+                <h1>Usuários cadastrados</h1>
+                <div class="section__container">
+                    <ul class="users__ul--container ul__container--admin"></ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- <dialog class="modal__controller--editDepartament">
+        <div class="modal__container--editDepartament">
+            <h1></h1>
+            <h3></h3>
+            <p></p>
+            <div class="modal__input--creatDepartament">
+                <select name="modal__input--select" id="">
+                    <option value="">Selecionar usuário</option>
+                </select>
+                <button>Contratar</button>
+            </div>
+            <div class="divUl_container">
+                <ul class="ul__container--modal">
+                    <li class="li__container--modal">
+                        <h3>Username</h3>
+                        <p>Company Name</p>
+                        <button>Desligar</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </dialog> -->
+    <dialog class="modal__controller--createDepartament">
+        <div class="modal__controller">
+            <h1>Criar Departamento</h1>
+            <input class="createDepartament__input--name inputs" type="text" placeholder="Nome do departamento">
+            <input class="createDepartament__input--description inputs" type="text" placeholder="Descrição">
+            <select class="select__modal--createDepartament createDepartament__input--select inputs" name="selectCompanies" id="">
+                <option value="">Selecionar empresa</option>
+            </select>
+            <button class="modal__buttonSubmit">Criar</button>
+        </div>
+        <p class="closeModal">X</p>
+    </dialog>
+    <dialog class="modal__container--editDepartment">
+        <div class="modal__controller--editDepartment">
+            <p class="button__close--editDepartment">X</p>
+            <h1 class="titulo__editDepartment">Editar Departamento</h1>
+            <textarea class="input__editDepartment" cols="30" rows="10"></textarea>
+            <button class="button__editDepartment">Salvar</button>
+        </div>
+    </dialog>   
+    <dialog class="modal__container--confirmDelete">
+        <div class="modal__controller--confirmDelete">
+            <p class="button__close--deleteDepartament">X</p>
+            <h1 class="titulo__confirmDelete">Realmente deseja remover o Departamento e demitir seus funcionários?</h1>
+            <button class="button__confirmDelete">Remover</button>
+        </div>
+    </dialog>
+    <dialog class="modal__container--viewDepartment">
+        <div class="modal__controller--viewDepartment">
+            <!-- <p class="modal__close--viewDepartment">X</p>
+            <h1 class="modal__h1--viewDepartment">Nome do departamento</h1>
+            <h3 class="modal__h3--viewDepartment">descrição do departamento</h3>
+            <p class="modal__p--viewDepartment">Empresa pertencente</p>
+            <div class="container__select--viewDepartment">
+                <select class="modal__select--viewDepartment">
+                    <option value="" hidden>Selecionar usuário</option>
+                </select>
+                <button class="modal__buttonContrat--viewDepartment">Contratar</button>
+            </div>
+            <div class="divUl__container--viewDepartment">
+                <ul class="ul__container--viewDepartment">
+                    <li class="li__container--viewDepartment">
+                        <h3>Username</h3>
+                        <p>Company Name</p>
+                        <button>Desligar</button>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </dialog>
+    <dialog class="modal__container--editUsers">
+        <div class="modal__controller--editUsers">
+            <p class="modal__buttonClose--editUsers">X</p>
+            <h1>Editar Usuário</h1>
+            <input class="modal__inputs--editUsers input__name--editUsers" type="text" name="name" placeholder="Nome">
+            <input class="modal__inputs--editUsers input__email--editUsers" type="email" name="email" placeholder="Email">
+            <button class="modal__button--editUsers" type="submit">Salvar</button>
+        </div>
+    </dialog>
+    <dialog class="modal__container--deleteUsers">
+        <div class="modal__controller--deleteUsers"></div>
+    </dialog>
+    <div class="toast__container hidden">
+        <p class="toast__paragraph">Login realizado com sucesso</p>
+    </div>
+</body>
+</html>

@@ -202,8 +202,11 @@ export async function hundleEditDepartment(){
                 input.value = ''
 
                 modalController.close()
-                ulContainer.innerHTML = ''
-                renderAllDepartments(await readAllDepartments())
+                toast(sucess, 'Departamento editado com sucesso!')
+                setTimeout(async () =>{
+                    ulContainer.innerHTML = ''
+                    renderAllDepartments(await readAllDepartments())    
+                },1000)
             })
 
             buttonClose.addEventListener('click', () =>{
@@ -349,12 +352,11 @@ export async function hundleEditEmployee(){
                         name: inputName.value,
                         email: inputEmail.value
                     }
-                    console.log(inputName.value);
-                    console.log(inputEmail.value);
     
                     await updateEmployee(employeeId, employeeBody)
     
                     setTimeout(()=>{
+                        toast(sucess, 'Usuário editado com sucesso')
                         modalContainer.close()
                         ulContainer.innerHTML = ''
                         renderAllEmployees()

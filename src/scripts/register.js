@@ -1,4 +1,5 @@
 import { registerAccont } from "./requests.js"
+import { error, sucess, toast } from "./toast.js"
 
 function authentication(){
     const token = localStorage.getItem('@Kenz-Empresas:authToken')
@@ -39,15 +40,15 @@ export async function register(){
         if(count !== 0){
             count = 0
 
-            return alert('Preencha todos os campos')
+            return toast(error,'Preencha todos os campos')
         }else{
             await registerAccont(registerBody)
-
+                
             inputs.forEach((input) =>{
                 input.value = ''
             })
-
-            location.replace('/src/pages/login.html')
+            
+            location.replace('/src/pages/login.html') 
         }
     })
 }

@@ -162,15 +162,11 @@ export async function registerAccont(registerBody){
     })
     .then(async (res) =>{
         if(res.ok){
-            setTimeout(async () =>{
-                console.log('entrou');
-                toast(sucess, 'Conta criada com sucesso')
-                return res.json()
-            }, 3000)
+            return res.json()
         }else{
             const response = res.json()
-            toast(error, response.message)
-        }
+            console.log(response.message)
+        }   
     })
     return register
 }

@@ -55,13 +55,8 @@ header{
     border: 1px solid var(--color-brand-1);
 }
 
-
-
 .header__container--right button:hover{
     cursor: pointer;
-}
-
-#button__right{
     background-color: var(--color-brand-1);
     color: var(--color-gray-6);
 }
@@ -114,21 +109,6 @@ header{
     border: 1px solid #00000033;
 }
 
-.main__container--input button{
-    width: 99%;
-    height: 48px;
-    font-size: var(--font-size-4);
-    color: var(--color-gray-6);
-    background-color: var(--color-brand-1);
-    border: 1px solid transparent;
-    font-family: var(--font-inter);
-}
-
-.main__container--input button:hover{
-    cursor: pointer;
-    background-color: var(--color-brand-2);
-}
-
 .main__container--float{
     display: flex;
     justify-content: center;
@@ -143,7 +123,7 @@ header{
     font-family: var(--font-inter);
 
 }
-.main__container--float button{
+.main__container button{
     width: 99%;
     height: 48px;
     border: 1px solid var(--color-brand-1);
@@ -154,7 +134,7 @@ header{
     font-family: var(--font-roboto);
 }
 
-.main__container--float button:hover{
+.main__container button:hover{
     cursor: pointer;
     background-color: var(--color-brand-2);
     color: var(--color-gray-6);

@@ -55,13 +55,8 @@ header{
     border: 1px solid var(--color-brand-1);
 }
 
-
-
 .header__container--right button:hover{
     cursor: pointer;
-}
-
-#button__right{
     background-color: var(--color-brand-1);
     color: var(--color-gray-6);
 }
@@ -114,19 +109,24 @@ header{
     border: 1px solid #00000033;
 }
 
-.main__container--input button{
-    width: 99%;
-    height: 48px;
+.header__container--right button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 50px;
+    background-color: var(--color-gray-6);
+    color: var(--color-brand-1);
     font-size: var(--font-size-4);
-    color: var(--color-gray-6);
-    background-color: var(--color-brand-1);
-    border: 1px solid transparent;
-    font-family: var(--font-inter);
+    font-family: var(--font-roboto);
+    font-weight: 600;
+    border: 1px solid var(--color-brand-1);
 }
 
-.main__container--input button:hover{
+.header__container--right button:hover{
     cursor: pointer;
-    background-color: var(--color-brand-2);
+    background-color: var(--color-brand-1);
+    color: var(--color-gray-6);
 }
 
 .main__container--float{
@@ -160,7 +160,7 @@ header{
     background-color: var(--color-brand-2);
 }
 
-.button__login{
+.main__container button{
     width: 99%;
     height: 48px;
     border: 1px solid var(--color-brand-1);
@@ -171,7 +171,7 @@ header{
     font-family: var(--font-roboto);
 }
 
-.button__login:hover{
+.main__container button:hover{
     cursor: pointer;
     background-color: var(--color-brand-2);
     color: var(--color-gray-6);

@@ -45,7 +45,7 @@ export async function register(){
             await registerAccont(registerBody)
                 
             inputs.forEach((input) =>{
-                input.value = ''
+                input.value = ''    
             })
             
             location.replace('/src/pages/login.html') 

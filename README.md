@@ -1,4 +1,6 @@
-Bom Projeto!! 
+Para rodar o projeto por completo é necessário utilizar uma API Local que estará disponibilizada neste README.md assim como a documentação e figma. 
+
+Este projeto tem como intuito criar um ambiente de administração para o RH, podendo administrar partes da empresa e funcionarios. Os perfis criados são direcionados apenas para o usuário, os admin utilizam o email: admin@mail.com, password: 123456
 
 Doc: http://localhost:3333/api-documentation/
 
